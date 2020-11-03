@@ -1,0 +1,35 @@
+Installing Jicofo Docker image
+
+apt update 
+apt install docker docker-compose
+
+git clone 
+
+vim config.sh
+
+change domain name
+
+Domain='domain.com'
+
+ADD_HOST_IP=add ip address
+
+copy cert.crt and cert.key to this folder
+
+
+chmod +x jitsi-web-docker.sh jitsi-prosody-docker.sh jitsi-jicofo-docker.sh jitsi-jvb-docker.sh
+
+
+to start docker 
+
+./jitsi-prosody-docker.sh start
+./jitsi-jicofo-docker.sh start
+./jitsi-jvb-docker.sh start
+./jitsi-web-docker.sh start
+
+to stop docker
+
+./jitsi-prosody-docker.sh stop
+./jitsi-jicofo-docker.sh stop
+./jitsi-jvb-docker.sh stop
+./jitsi-web-docker.sh stop
+
