@@ -1,9 +1,10 @@
 Installing Jicofo Docker image
 
 apt update 
-apt install docker docker-compose
-
-git clone 
+apt install docker docker.io docker-compose git
+ 
+git clone https://github.com/raman374/jitsi-docker.git
+cd jitsi-docker
 
 vim config.sh
 
