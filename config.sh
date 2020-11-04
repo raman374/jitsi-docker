@@ -5,7 +5,7 @@ webImage='jitsi/web:latest'
 jicofoImage='jitsi/jicofo:latest'
 prosodyImage='jitsi/prosody:latest'
 jvbImage='jitsi/jvb:latest'
-jibriImage='jitsi/jibri'
+jibriImage='jitsi/jibri:latest'
 
 JICOFO_COMPONENT_SECRET='JICOFO_COMPONENT_SECRET=9sQqRQc4'
 JICOFO_AUTH_PASSWORD='JICOFO_AUTH_PASSWORD=W4UA9Yc6'
