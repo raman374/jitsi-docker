@@ -22,6 +22,7 @@ docker create   --name jitsi-jicofo --cap-add SYS_ADMIN --cap-add NET_BIND_SERVI
 
 
 docker start jitsi-jicofo
+docker update --restart always jitsi-jicofo
 
 fi
 

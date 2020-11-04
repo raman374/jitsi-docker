@@ -22,6 +22,7 @@ docker create   --name jitsi-jvb --cap-add SYS_ADMIN --cap-add NET_BIND_SERVICE 
 
 
 docker start jitsi-jvb
+docker update --restart always jitsi-jvb
 
 fi
 

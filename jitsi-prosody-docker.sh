@@ -23,6 +23,7 @@ docker create   --name jitsi-prosody --cap-add SYS_ADMIN --cap-add NET_BIND_SERV
 
 
 docker start jitsi-prosody
+docker update --restart always jitsi-prosody
 
 fi
 

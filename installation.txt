@@ -18,7 +18,14 @@ ADD_HOST_IP=add ip address
 copy cert.crt and cert.key to this folder
 
 
-chmod +x jitsi-web-docker.sh jitsi-prosody-docker.sh jitsi-jicofo-docker.sh jitsi-jvb-docker.sh
+chmod +x jitsi-web-docker.sh jitsi-prosody-docker.sh jitsi-jicofo-docker.sh jitsi-jvb-docker.sh jitsi-jibri-docker.sh
+
+
+apt install -y linux-image-extra-virtual alsa-utils
+echo "snd-aloop" >> /etc/modules
+reboot
+modprobe snd-aloop
+lsmod | grep snd_aloop
 
 
 to start docker 
@@ -27,11 +34,14 @@ to start docker
 ./jitsi-jicofo-docker.sh start
 ./jitsi-jvb-docker.sh start
 ./jitsi-web-docker.sh start
-
+./jitsi-jibri-docker.sh start
 to stop docker
 
 ./jitsi-prosody-docker.sh stop
 ./jitsi-jicofo-docker.sh stop
 ./jitsi-jvb-docker.sh stop
 ./jitsi-web-docker.sh stop
+./jitsi-jibri-docker.sh stop
+
+
 

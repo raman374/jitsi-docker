@@ -26,7 +26,7 @@ mkdir -p ${CONFIG}/web/keys
 cp cert.key cert.crt ${CONFIG}/web/keys
 
 docker start jitsi-web
-
+docker update --restart always jitsi-web
 
 fi
 
