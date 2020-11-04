@@ -1,7 +1,8 @@
 Installing Jicofo Docker image
 
 apt update 
-apt install docker docker.io docker-compose git
+apt install docker docker.io docker-compose git make
+sudo apt remove golang-docker-credential-helpers
  
 git clone https://github.com/raman374/jitsi-docker.git
 cd jitsi-docker
